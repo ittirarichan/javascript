@@ -63,3 +63,13 @@ let b=2
 // alert(a==b && a>8)
 // alert(a==b || a>8)
 // alert(! a==b)
+
+
+function sample(){
+    alert('SAMPLE')
+}
+
+function sample1(){
+    alert('SAMPLE1')
+}
+
