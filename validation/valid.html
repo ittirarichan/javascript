@@ -1,18 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./valid.css">
-</head>
-<body>
-    <div class="container">
-        
-    </div>
-
-    
-
+    <style>
+        body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(0, 200, 255);
+      }
+      .container {
+        background-color: rgb(134, 230, 251);
+        width: 30vw;
+        height: 70vh;
+        margin-top: 15vh;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 30px;
+      }
+      .child2{
+        margin-left: 20px;
+        margin-bottom: 20px;
+      }
+      .child1{
+        margin-left: 5px;
+        margin-bottom: 20px;
+      }
+      .child4{
+        margin-left: 15px;
+        margin-top: 20px;
+      }
+      .child5{
+        margin-top: 20px;
+      }
+      label{
+        margin-right: 40px;
+      }
+      button{
+        margin-top: 20px;
+        background-color: black;
+        color: white;
+        border: 1px solid black;
+        border-radius: 2px;
+        height: 30px;
+        width:8vw;
+        margin-left: 25px;
+      }
+      .adrs{
+        /* width:17vw; */
+        height:5vw
+      }
+      h6{
+        color: red;
+      }
+      
+    </style>
     <script src="./valid.js"></script>
-</body>
+  </head>
+  <body>
+    <div class="container">
+      <div class="child1">
+        <label for="name">NAME</label>
+        <input type="text" id="name">
+      </div>
+        <div class="child2">
+          <label for="phno">phno</label>
+        <input type="tel" id="phno">
+        <h6 id="phone_error"></h6>
+        </div>
+        <div class="child3">
+          <label for="pin">pincode</label>
+        <input type="number" id="pin">
+        <h6 id="invalid_pin"></h6>
+        </div>
+        <div class="child4">
+          <label for="email">email</label>
+          <input type="email" id="email">
+          <h6 id="email_error"></h6>
+        </div>
+        <div class="child5">
+          <label for="address">address</label>
+          <input class="adrs" type="text" id="address">
+        </div>
+        <button onclick="button()">submit</button>
+    </div>
+    
+  </body>
 </html>
