@@ -12,17 +12,50 @@
             height: 250px;
         }
 
+        form{
+            width: 30%;
+            margin: auto;
+            display: grid;
+            justify-content: center;
+            justify-items: center;
+            background-color: black;
+            color: white;
 
+            border-radius: 20px;
+        }
+
+        .btn{
+            background-color: black;
+            color: white;
+            cursor: pointer;
+        }
+
+        form input{
+            margin-bottom: 20px;
+        }
+
+        .hedder{
+            background-color: black;
+            color: white;
+        }
+
+        tbody{
+            text-align: center;
+        }
+        .btn:hover{
+            background-color: white;
+            color: black;
+        }
     </style>
 </head>
 
 <body>
     <table class="tbl" border="2">
-        <thead>
+        <thead class="hedder">
             <tr>
-            <th>ID</th>
             <th>Name</th>
             <th>Age</th>
+            <th>PLACE</th>
         </tr>
         <thead>
         <tbody>
@@ -30,16 +63,29 @@
         </tbody>
     </table><br>
 
-    <form action="">
-        <label for="id">ID :</label>
-        <input type="text" id="id">
+    <form id="form 1">
+
         <label for="id">NAME :</label>
         <input type="text" id="name">
         <label for="id">AGE :</label>
         <input type="tel" id="age">
-        <input type="submit" value="SUBMIT">
-    </form>
+        <label for="id">PLACE :</label>
+        <input type="text" id="plc">
+        <input class="btn" type="submit" value="SUBMIT">
+    </form><br>
     
+
+        <form id="form 2">
+
+        <label for="id">NAME :</label>
+        <input type="text" id="name">
+        <label for="id">AGE :</label>
+        <input type="tel" id="age">
+        <label for="id">PLACE :</label>
+        <input type="text" id="plc">
+        <input class="btn" type="submit" value="SUBMIT">
+    </form>
+
     <script src="./work1.js"></script>
 </body>
 </html>
