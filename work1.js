@@ -36,6 +36,14 @@ edit_btn.onclick=function(){
     edit_td.appendChild(edit_btn)
     t_row.appendChild(edit_td)
 
+    const del_td=document.createElement('td')
+    const del_btn=document.createElement('button')
+    del_btn.textContent='delete'
+    del_btn.onclick=function(){
+      delete_data(element.name)
+    }
+    del_td.appendChild(del_btn)
+    t_row.appendChild(del_td)
     t_var.appendChild(t_row)
   });
 }
@@ -84,5 +92,14 @@ document.getElementById('edit_form').style.display='none'
 document.getElementById('submit_form').style.display='block'
 display()
 })
+
+function delete_data(name){
+  d=d.filter(user=>{
+    if(user.name!=name){
+      return user
+    }
+  })  
+  display()
+}
 
 display()

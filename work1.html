@@ -9,10 +9,9 @@
 
         .tbl{
             width: 100%;
-            height: 250px;
         }
 
-        form{
+        .frm1{
             width: 30%;
             margin: auto;
             display: grid;
@@ -21,6 +20,17 @@
             background-color: black;
             color: white;
 
+            border-radius: 20px;
+        }
+
+        .frm2{
+            width: 30%;
+            margin: auto;
+            display: grid;
+            justify-content: center;
+            justify-items: center;
+            background-color: black;
+            color: white;
             border-radius: 20px;
         }
 
@@ -63,7 +73,7 @@
         </tbody>
     </table><br>
 
-    <form id="submit_form">
+    <form class="frm1" id="submit_form">
 
         <label for="id">NAME :</label>
         <input type="text" id="name">
@@ -75,7 +85,7 @@
     </form><br>
     
 
-        <form id="edit_form" style="display:none;">
+        <form class="frm2" id="edit_form" style="display:none;">
 
         <label for="id">NAME :</label>
         <input type="text" id="e_name">
