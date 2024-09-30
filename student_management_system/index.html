@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+
+
+    <style>      .tbl{
+        width: 100%;
+    }
+
+    .form1{
+        width: 30%;
+        margin: auto;
+        display: grid;
+        justify-content: center;
+        justify-items: center;
+        background-color: black;
+        color: white;
+
+        border-radius: 20px;
+    }
+
+    .form2{
+        width: 30%;
+        margin: auto;
+        display: grid;
+        justify-content: center;
+        justify-items: center;
+        background-color: black;
+        color: white;
+        border-radius: 20px;
+    }
+
+    .btn{
+        background-color: black;
+        color: white;
+        cursor: pointer;
+    }
+
+    form input{
+        margin-bottom: 20px;
+    }
+
+    .hedder{
+        background-color: black;
+        color: white;
+    }
+
+    tbody{
+        text-align: center;
+    }
+    .btn:hover{
+        background-color: white;
+        color: black;
+    }
+
+    .tbl1{
+        width: 100%;
+    }
+</style>
+
+
+</head>
+<body>
+
+    <table class="tbl1" border="2">
+        <thead class="hedder">
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Email</th>
+            <th>Course</th>
+            <th>Joining Date</th>
+        </tr>
+    </thead>
+    <tbody>
+
+    </tbody>
+    </table><br>
+
+    <form class="form1" id="submit_form">
+        <input type="text" placeholder="Id" id="id">
+        <input type="text" placeholder="Name" id="name">
+        <input type="number" placeholder="Age" id="age">
+        <input type="email" placeholder="Email" id="email">
+        <input type="text" placeholder="Course" id="course">
+        <input type="date" placeholder="Joining Date" id="date">
+        <input class="btn" type="submit" value="Submit">
+    </form><br>
+
+    <form class="form2" id="edit_form" style="display: none;">
+        <input type="text" placeholder="Id" id="e_id">
+        <input type="text" placeholder="Name" id="e_name">
+        <input type="number" placeholder="Age" id="e_age">
+        <input type="email" placeholder="Email" id="e_email">
+        <input type="text" placeholder="Course" id="e_course">
+        <input type="date" placeholder="Joining Date" id="e_date">
+        <input class="btn" type="submit" value="Submit">
+    </form>
+    
+    <script src="./index.js"></script>
+</body>
+</html>
