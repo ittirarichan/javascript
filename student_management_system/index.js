@@ -117,11 +117,11 @@ document.getElementById("submit_form").addEventListener('submit',function(event)
     document.getElementById('submit_form').style.display='none'
     const edit_data=d.find(user=>user.name==name)
     document.getElementById('e_id').value=edit_data.id
-    document.getElementById('e_name').value=edit_data.
+    document.getElementById('e_name').value=edit_data.name
     document.getElementById('e_age').value=edit_data.age
-    document.getElementById('e_email').value=edit_data.place
-    document.getElementById('e_course').value=edit_data.place
-    document.getElementById('e_date').value=edit_data.place
+    document.getElementById('e_email').value=edit_data.email
+    document.getElementById('e_course').value=edit_data.course
+    document.getElementById('e_date').value=edit_data.date
     edit_name=name
   }
   
